@@ -11,7 +11,7 @@ var letterToGuess = null;
 
 var computerGuess = letters[Math.floor(Math.random() * letters.length)];
 
-console.log(computerGuess);
+/* console.log(computerGuess); */
 
 // Update the HTML displaying in the #guesses-left div, with the amount of guesses the user has left before reset
 function updateGuessesLeft() {
@@ -69,7 +69,7 @@ document.onkeyup = function(event) {
                 document.querySelector("#wins").innerHTML = "Wins: " + wins;
                 alert("Congratulations you're psychic!!  " + userGuess + " is the correct letter!");
                 reset();
-                console.log("new letter is: " + letterToGuess);
+              /*   console.log("new letter is: " + letterToGuess); */
             }
 
         } else if (guessesLeft === 0) {
@@ -78,7 +78,7 @@ document.onkeyup = function(event) {
             document.querySelector("#losses").innerHTML = "Losses: " + losses;
             alert("Maybe you'll be psychic next time.  But if you were going to be psychic, wouldn't you already know?!");
             reset();
-            console.log("new letter is: " + letterToGuess);
+           /*  console.log("new letter is: " + letterToGuess); */
         }
      
     } else {
